@@ -1,5 +1,19 @@
 # find-my-forensics
 
+## 🗺️ Displaying PoL Map
+
+1. Serve from a small, local web server:
+
+```
+python -m http.server
+```
+
+2. Open in your web browser:
+
+```
+http://localhost:8000/AirPods_PoL.html
+```
+
 ## ⚠️ Legal Disclaimer
 
 This repository documents a personal case study and analytical methodology for recovering a stolen device using Apple's Find My network. It is intended solely for educational purposes and to assist individuals in recovering their own lost or stolen Apple devices in cooperation with law enforcement.
