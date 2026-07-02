@@ -1,4 +1,14 @@
-# find-my-forensics
+# Find My Forensics: Pattern-of-Life Analysis from Apple Find My Pings
+
+## 🚀 Overview
+
+This repository documents a real-world case study in which Apple Find My network data was used to reconstruct the 
+movement and behavioral patterns of a stolen device. By systematically observing location ping 
+frequency, command response behavior, and status transitions within the Find My app, it was possible to build a 
+pattern-of-life (PoL) analysis that identified likely residential locations, inferred moments of human interaction with the 
+device, and traced movement between locations of interest. The repository provides a documented analytical framework and 
+Python-based geospatial visualizations with privacy-preserving anonymization. 
+All location data has been anonymized in accordance with GDPR Article 5 to prevent identification of any individual.
 
 ## 🗺️ Static PoL Maps
 
@@ -6,19 +16,52 @@ Vienna (June 28 - July 2):
 
 ![](images/Vienna_PoL.png)
 
-## 🔍 Displaying Interactive PoL Maps
+## 🔍 Display Interactive PoL Maps
 
-1. Serve from a small, local web server:
+Serve from a small, local web server:
 
 ```
 python -m http.server
 ```
 
-2. Open in your web browser:
+Open in your web browser:
 
 ```
 http://localhost:8000/AirPods_PoL_EU.html
 ```
+
+## ▶️ How to Run
+
+### venv and pip
+
+Create environment:
+
+```
+python3.12 -m venv .venv
+```
+
+If using Mac/Linux:
+
+```
+source .venv/bin/activate
+```
+
+If using Windows:
+
+```
+.venv\Scripts\activate
+```
+
+Install requirements:
+
+```
+pip install -r requirements.txt
+```
+
+## 🛠️ Tech Stack
+- Python (3.12)
+- Folium (geospatial visualization)
+- Jupyter Notebook
 
 ## ⚠️ Legal Disclaimer
 
@@ -27,10 +70,9 @@ This repository documents a personal case study and analytical methodology for r
 **Intended Use**
 
 The methods, code, and analysis presented in this repository are designed exclusively for:
-
-Tracking devices you own or are legally authorized to monitor
-Assisting law enforcement with evidence gathering in the context of device theft
-Academic and educational understanding of Apple's Find My network behavior
+- Tracking devices you own or are legally authorized to monitor
+- Assisting law enforcement with evidence gathering in the context of device theft
+- Academic and educational understanding of Apple's Find My network behavior
 
 **GDPR & Privacy Law**
 
