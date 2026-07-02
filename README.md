@@ -1,6 +1,12 @@
 # find-my-forensics
 
-## 🗺️ Displaying PoL Map
+## 🗺️ Static PoL Maps
+
+Vienna (June 28 - July 2):
+
+![](images/Vienna_PoL.png)
+
+## 🔍 Displaying Interactive PoL Maps
 
 1. Serve from a small, local web server:
 
@@ -11,7 +17,7 @@ python -m http.server
 2. Open in your web browser:
 
 ```
-http://localhost:8000/AirPods_PoL.html
+http://localhost:8000/AirPods_PoL_EU.html
 ```
 
 ## ⚠️ Legal Disclaimer
