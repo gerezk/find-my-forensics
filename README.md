@@ -16,9 +16,17 @@ Vienna (June 28 - July 2):
 
 ![](images/vienna.png)
 
+Train Trip from Vienna to Kyiv (July 2-3)
+
 ![](images/vienna_kyiv.png)
 
 ## 🔍 Display Interactive PoL Maps
+
+Starting from the project root, change directory to `maps`:
+
+```
+cd maps
+```
 
 Serve from a small, local web server:
 
