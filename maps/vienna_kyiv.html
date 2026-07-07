@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ff20c1029c8d3c5698f933609b7615f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ff20c1029c8d3c5698f933609b7615f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ff20c1029c8d3c5698f933609b7615f = L.map(
+                "map_0ff20c1029c8d3c5698f933609b7615f",
+                {
+                    center: [49.2074, 23.1393],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b542b04ddb363d7384e5744581b242c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6b542b04ddb363d7384e5744581b242c.addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var marker_8f22d10cdd70f7b154d40d6c29427c58 = L.marker(
+                [48.1745, 16.3341],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_64b20454cfaa1a5ef8fb562e77dd3474 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_269f0ab6e343b125c7cd61a2a665c001 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd69306192d62ea75d50a599c175964c = $(`<div id="html_bd69306192d62ea75d50a599c175964c" style="width: 100.0%; height: 100.0%;">Morning of July 2</div>`)[0];
+                popup_269f0ab6e343b125c7cd61a2a665c001.setContent(html_bd69306192d62ea75d50a599c175964c);
+            
+        
+
+        marker_8f22d10cdd70f7b154d40d6c29427c58.bindPopup(popup_269f0ab6e343b125c7cd61a2a665c001)
+        ;
+
+        
+    
+    
+            marker_8f22d10cdd70f7b154d40d6c29427c58.bindTooltip(
+                `<div>
+                     Wien Meidling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f22d10cdd70f7b154d40d6c29427c58.setIcon(icon_64b20454cfaa1a5ef8fb562e77dd3474);
+            
+    
+            var marker_ca53b099bec89ff5d8b162dd4dd62903 = L.marker(
+                [48.4324, 22.2055],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_0b2ab35defb782ce0dc19be99d244e67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3020cd267bba886e1eb5f564404b891 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_555ec9972e62c89a0697ea322f6673dc = $(`<div id="html_555ec9972e62c89a0697ea322f6673dc" style="width: 100.0%; height: 100.0%;">Evening of July 2</div>`)[0];
+                popup_a3020cd267bba886e1eb5f564404b891.setContent(html_555ec9972e62c89a0697ea322f6673dc);
+            
+        
+
+        marker_ca53b099bec89ff5d8b162dd4dd62903.bindPopup(popup_a3020cd267bba886e1eb5f564404b891)
+        ;
+
+        
+    
+    
+            marker_ca53b099bec89ff5d8b162dd4dd62903.bindTooltip(
+                `<div>
+                     Chop, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca53b099bec89ff5d8b162dd4dd62903.setIcon(icon_0b2ab35defb782ce0dc19be99d244e67);
+            
+    
+            var poly_line_63f25930a956bfe47be6f179d750d619 = L.polyline(
+                [[48.1745, 16.3341], [48.4324, 22.2055]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_63f25930a956bfe47be6f179d750d619.bindTooltip(
+                `<div>
+                     Wien Meidling -> Chop, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_452fae296881431a4142863a7af051ca = L.marker(
+                [49.9179, 24.6134],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_5583708d7322472bb8c93891ef751b94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb9f48bc1e4db359fa5fe5e12b282f15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1bcf2c5500eaa63c20530bd6b4940e8 = $(`<div id="html_f1bcf2c5500eaa63c20530bd6b4940e8" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_cb9f48bc1e4db359fa5fe5e12b282f15.setContent(html_f1bcf2c5500eaa63c20530bd6b4940e8);
+            
+        
+
+        marker_452fae296881431a4142863a7af051ca.bindPopup(popup_cb9f48bc1e4db359fa5fe5e12b282f15)
+        ;
+
+        
+    
+    
+            marker_452fae296881431a4142863a7af051ca.bindTooltip(
+                `<div>
+                     Krasne, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_452fae296881431a4142863a7af051ca.setIcon(icon_5583708d7322472bb8c93891ef751b94);
+            
+    
+            var poly_line_8c8f2d1b6fc65c7314df7b2fba914cd0 = L.polyline(
+                [[48.4324, 22.2055], [49.9179, 24.6134]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_8c8f2d1b6fc65c7314df7b2fba914cd0.bindTooltip(
+                `<div>
+                     Chop, Ukraine -> Krasne, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86977d67258016f9351d85b1e7dd469b = L.marker(
+                [50.1762, 25.4329],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_bd9b69277230e290273c1f1dd9a516d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3662c1235f17379caaab6fb6b1dae711 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_756c0626a91f0a2cdc6fe3d881ef03e4 = $(`<div id="html_756c0626a91f0a2cdc6fe3d881ef03e4" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_3662c1235f17379caaab6fb6b1dae711.setContent(html_756c0626a91f0a2cdc6fe3d881ef03e4);
+            
+        
+
+        marker_86977d67258016f9351d85b1e7dd469b.bindPopup(popup_3662c1235f17379caaab6fb6b1dae711)
+        ;
+
+        
+    
+    
+            marker_86977d67258016f9351d85b1e7dd469b.bindTooltip(
+                `<div>
+                     Sytne, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86977d67258016f9351d85b1e7dd469b.setIcon(icon_bd9b69277230e290273c1f1dd9a516d0);
+            
+    
+            var poly_line_f79bd38e9a8e85c46e1c829cc0049d6a = L.polyline(
+                [[49.9179, 24.6134], [50.1762, 25.4329]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_f79bd38e9a8e85c46e1c829cc0049d6a.bindTooltip(
+                `<div>
+                     Krasne, Ukraine -> Sytne, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_224fd2b93bb0fb2b3a1abad379919a03 = L.marker(
+                [50.3494, 26.7077],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_78d3e4e4433bf94626fbb5030c8c5559 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a21d68f24ab3adcb507ef667cd22f8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba8d062c33624a9449046bbfb5af7f0a = $(`<div id="html_ba8d062c33624a9449046bbfb5af7f0a" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_1a21d68f24ab3adcb507ef667cd22f8e.setContent(html_ba8d062c33624a9449046bbfb5af7f0a);
+            
+        
+
+        marker_224fd2b93bb0fb2b3a1abad379919a03.bindPopup(popup_1a21d68f24ab3adcb507ef667cd22f8e)
+        ;
+
+        
+    
+    
+            marker_224fd2b93bb0fb2b3a1abad379919a03.bindTooltip(
+                `<div>
+                     Staryi Kryvyn, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_224fd2b93bb0fb2b3a1abad379919a03.setIcon(icon_78d3e4e4433bf94626fbb5030c8c5559);
+            
+    
+            var poly_line_b29808b8ca481c6cf3645258817a06b1 = L.polyline(
+                [[50.1762, 25.4329], [50.3494, 26.7077]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_b29808b8ca481c6cf3645258817a06b1.bindTooltip(
+                `<div>
+                     Sytne, Ukraine -> Staryi Kryvyn, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad95b431e9588def451d4f4ce1a75d7f = L.marker(
+                [50.198, 27.0684],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_660982959c05c71b275bc7bdf00fe0f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c2bdac931976b7b0d676e789e78f495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a413ea1f749e18c87bc12dceca833d48 = $(`<div id="html_a413ea1f749e18c87bc12dceca833d48" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_0c2bdac931976b7b0d676e789e78f495.setContent(html_a413ea1f749e18c87bc12dceca833d48);
+            
+        
+
+        marker_ad95b431e9588def451d4f4ce1a75d7f.bindPopup(popup_0c2bdac931976b7b0d676e789e78f495)
+        ;
+
+        
+    
+    
+            marker_ad95b431e9588def451d4f4ce1a75d7f.bindTooltip(
+                `<div>
+                     Shepetivka, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad95b431e9588def451d4f4ce1a75d7f.setIcon(icon_660982959c05c71b275bc7bdf00fe0f1);
+            
+    
+            var poly_line_b60e79f42ff3f5e2d9326d649c3ded9f = L.polyline(
+                [[50.3494, 26.7077], [50.198, 27.0684]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_b60e79f42ff3f5e2d9326d649c3ded9f.bindTooltip(
+                `<div>
+                     Staryi Kryvyn, Ukraine -> Shepetivka, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6027cb2990158c40ab6976153253f04d = L.marker(
+                [50.1107, 27.5813],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_35623ca8e0dde940baa708ce2c6e361a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8dd8c9916d6d48ead07b407b79fc251f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e922953758c50a324e555d5f822adf55 = $(`<div id="html_e922953758c50a324e555d5f822adf55" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_8dd8c9916d6d48ead07b407b79fc251f.setContent(html_e922953758c50a324e555d5f822adf55);
+            
+        
+
+        marker_6027cb2990158c40ab6976153253f04d.bindPopup(popup_8dd8c9916d6d48ead07b407b79fc251f)
+        ;
+
+        
+    
+    
+            marker_6027cb2990158c40ab6976153253f04d.bindTooltip(
+                `<div>
+                     Blydni, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6027cb2990158c40ab6976153253f04d.setIcon(icon_35623ca8e0dde940baa708ce2c6e361a);
+            
+    
+            var poly_line_7e3ee2c7203898b4ef1ec8bd3dd757dc = L.polyline(
+                [[50.198, 27.0684], [50.1107, 27.5813]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_7e3ee2c7203898b4ef1ec8bd3dd757dc.bindTooltip(
+                `<div>
+                     Shepetivka, Ukraine -> Blydni, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7c28ea91fe8afd68cd346ff10427a1c9 = L.marker(
+                [50.0758, 27.8038],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_4cdfcd4e941ac2e3f65ae53cffa20d23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d47bee46f25142e16a5d752465586439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca85a1474048af59f4c24188b4833310 = $(`<div id="html_ca85a1474048af59f4c24188b4833310" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_d47bee46f25142e16a5d752465586439.setContent(html_ca85a1474048af59f4c24188b4833310);
+            
+        
+
+        marker_7c28ea91fe8afd68cd346ff10427a1c9.bindPopup(popup_d47bee46f25142e16a5d752465586439)
+        ;
+
+        
+    
+    
+            marker_7c28ea91fe8afd68cd346ff10427a1c9.bindTooltip(
+                `<div>
+                     Pechanivka, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c28ea91fe8afd68cd346ff10427a1c9.setIcon(icon_4cdfcd4e941ac2e3f65ae53cffa20d23);
+            
+    
+            var poly_line_5269dadf139f05b0ad8f273ad2a8e9f7 = L.polyline(
+                [[50.1107, 27.5813], [50.0758, 27.8038]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_5269dadf139f05b0ad8f273ad2a8e9f7.bindTooltip(
+                `<div>
+                     Blydni, Ukraine -> Pechanivka, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dcccb777e323d3ca59ed190b994a1d23 = L.marker(
+                [49.8898, 28.6129],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_c1d1cae596c70bace68899dd4a90ed41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c84488562ad3c0fffdd6f6296e622907 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b461c08953a9e0da9d1e6ab6dccf58eb = $(`<div id="html_b461c08953a9e0da9d1e6ab6dccf58eb" style="width: 100.0%; height: 100.0%;">Morning of July 3</div>`)[0];
+                popup_c84488562ad3c0fffdd6f6296e622907.setContent(html_b461c08953a9e0da9d1e6ab6dccf58eb);
+            
+        
+
+        marker_dcccb777e323d3ca59ed190b994a1d23.bindPopup(popup_c84488562ad3c0fffdd6f6296e622907)
+        ;
+
+        
+    
+    
+            marker_dcccb777e323d3ca59ed190b994a1d23.bindTooltip(
+                `<div>
+                     Berdychiv, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dcccb777e323d3ca59ed190b994a1d23.setIcon(icon_c1d1cae596c70bace68899dd4a90ed41);
+            
+    
+            var poly_line_987edf5b22338a8e631146c4df502fbf = L.polyline(
+                [[50.0758, 27.8038], [49.8898, 28.6129]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_987edf5b22338a8e631146c4df502fbf.bindTooltip(
+                `<div>
+                     Pechanivka, Ukraine -> Berdychiv, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_56f3e93b542b70462ddd96bcf3c42f10 = L.marker(
+                [50.2353, 30.2498],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_884559922d737408d95c8ba6cad831ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b0c7af423fa152cbefba7e0cbbca778 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84805a9a3a49a5e1a5d414d04d91e3d6 = $(`<div id="html_84805a9a3a49a5e1a5d414d04d91e3d6" style="width: 100.0%; height: 100.0%;">Afternoon of July 3</div>`)[0];
+                popup_3b0c7af423fa152cbefba7e0cbbca778.setContent(html_84805a9a3a49a5e1a5d414d04d91e3d6);
+            
+        
+
+        marker_56f3e93b542b70462ddd96bcf3c42f10.bindPopup(popup_3b0c7af423fa152cbefba7e0cbbca778)
+        ;
+
+        
+    
+    
+            marker_56f3e93b542b70462ddd96bcf3c42f10.bindTooltip(
+                `<div>
+                     Kalynivka, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56f3e93b542b70462ddd96bcf3c42f10.setIcon(icon_884559922d737408d95c8ba6cad831ed);
+            
+    
+            var poly_line_780c8c64d6244dfb5f8a69e7b6896af8 = L.polyline(
+                [[49.8898, 28.6129], [50.2353, 30.2498]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_780c8c64d6244dfb5f8a69e7b6896af8.bindTooltip(
+                `<div>
+                     Berdychiv, Ukraine -> Kalynivka, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f5e0cc26bbcd223f70615d4752e931c = L.marker(
+                [50.4404, 30.4898],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_03bf871ce79c41fab7f33f1e9d7aa3ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "person-running",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb8671b022874a2a58755b2644b14661 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eb30333639c854af5925574e672a2d2 = $(`<div id="html_3eb30333639c854af5925574e672a2d2" style="width: 100.0%; height: 100.0%;">Afternoon of July 3</div>`)[0];
+                popup_cb8671b022874a2a58755b2644b14661.setContent(html_3eb30333639c854af5925574e672a2d2);
+            
+        
+
+        marker_5f5e0cc26bbcd223f70615d4752e931c.bindPopup(popup_cb8671b022874a2a58755b2644b14661)
+        ;
+
+        
+    
+    
+            marker_5f5e0cc26bbcd223f70615d4752e931c.bindTooltip(
+                `<div>
+                     Kyiv-Pasazhyrskyi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f5e0cc26bbcd223f70615d4752e931c.setIcon(icon_03bf871ce79c41fab7f33f1e9d7aa3ab);
+            
+    
+            var poly_line_eeb7ea87c1cef6981d75ede730f82512 = L.polyline(
+                [[50.2353, 30.2498], [50.4404, 30.4898]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_eeb7ea87c1cef6981d75ede730f82512.bindTooltip(
+                `<div>
+                     Kalynivka, Ukraine -> Kyiv-Pasazhyrskyi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_545f0eb1cd834e72bb020c7044520de3 = L.marker(
+                [50.4964, 30.5208],
+                {
+}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var icon_2bb2308b100f865fd8c468481bf3bb3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3f4429e6977fc3fed3e374ece145d63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b16f52b18d31d24bb856de79cf1c1863 = $(`<div id="html_b16f52b18d31d24bb856de79cf1c1863" style="width: 100.0%; height: 100.0%;">July 3</div>`)[0];
+                popup_b3f4429e6977fc3fed3e374ece145d63.setContent(html_b16f52b18d31d24bb856de79cf1c1863);
+            
+        
+
+        marker_545f0eb1cd834e72bb020c7044520de3.bindPopup(popup_b3f4429e6977fc3fed3e374ece145d63)
+        ;
+
+        
+    
+    
+            marker_545f0eb1cd834e72bb020c7044520de3.bindTooltip(
+                `<div>
+                     Suspected Residential Address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_545f0eb1cd834e72bb020c7044520de3.setIcon(icon_2bb2308b100f865fd8c468481bf3bb3d);
+            
+    
+            var circle_e1830e1482ff7e37520098243d85cf5b = L.circle(
+                [50.4964, 30.5208],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 2}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            var poly_line_eb200222b2b32a13d3b026af3e5e9d0a = L.polyline(
+                [[50.4404, 30.4898], [50.4964, 30.5208]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+            poly_line_eb200222b2b32a13d3b026af3e5e9d0a.bindTooltip(
+                `<div>
+                     Kyiv-Pasazhyrskyi -> Suspected Residence
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_6b542b04ddb363d7384e5744581b242c.addTo(map_0ff20c1029c8d3c5698f933609b7615f);
+        
+    
+                marker_8f22d10cdd70f7b154d40d6c29427c58.setIcon(icon_64b20454cfaa1a5ef8fb562e77dd3474);
+            
+    
+                marker_ca53b099bec89ff5d8b162dd4dd62903.setIcon(icon_0b2ab35defb782ce0dc19be99d244e67);
+            
+    
+                marker_452fae296881431a4142863a7af051ca.setIcon(icon_5583708d7322472bb8c93891ef751b94);
+            
+    
+                marker_86977d67258016f9351d85b1e7dd469b.setIcon(icon_bd9b69277230e290273c1f1dd9a516d0);
+            
+    
+                marker_224fd2b93bb0fb2b3a1abad379919a03.setIcon(icon_78d3e4e4433bf94626fbb5030c8c5559);
+            
+    
+                marker_ad95b431e9588def451d4f4ce1a75d7f.setIcon(icon_660982959c05c71b275bc7bdf00fe0f1);
+            
+    
+                marker_6027cb2990158c40ab6976153253f04d.setIcon(icon_35623ca8e0dde940baa708ce2c6e361a);
+            
+    
+                marker_7c28ea91fe8afd68cd346ff10427a1c9.setIcon(icon_4cdfcd4e941ac2e3f65ae53cffa20d23);
+            
+    
+                marker_dcccb777e323d3ca59ed190b994a1d23.setIcon(icon_c1d1cae596c70bace68899dd4a90ed41);
+            
+    
+                marker_56f3e93b542b70462ddd96bcf3c42f10.setIcon(icon_884559922d737408d95c8ba6cad831ed);
+            
+    
+                marker_5f5e0cc26bbcd223f70615d4752e931c.setIcon(icon_03bf871ce79c41fab7f33f1e9d7aa3ab);
+            
+    
+                marker_545f0eb1cd834e72bb020c7044520de3.setIcon(icon_2bb2308b100f865fd8c468481bf3bb3d);
+            
+</script>
+</html>

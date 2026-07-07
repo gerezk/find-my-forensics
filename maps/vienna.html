@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e12080ef7f7096795c59a33bfc11da35 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e12080ef7f7096795c59a33bfc11da35" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e12080ef7f7096795c59a33bfc11da35 = L.map(
+                "map_e12080ef7f7096795c59a33bfc11da35",
+                {
+                    center: [48.2085, 16.3721],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9e178a5102215d162c8f54e872268f1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a9e178a5102215d162c8f54e872268f1.addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var marker_74ade229032ce9bb3bdd8b4a4b326a2e = L.marker(
+                [48.1848, 16.3782],
+                {
+}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var icon_8dda5406a1941b0d51f82c911a619642 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fb92a81621dcd38758965f9b9446ebf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c81123a6f7f9776ab9a011c2ab5f0ae7 = $(`<div id="html_c81123a6f7f9776ab9a011c2ab5f0ae7" style="width: 100.0%; height: 100.0%;">~11:30 at June 28</div>`)[0];
+                popup_0fb92a81621dcd38758965f9b9446ebf.setContent(html_c81123a6f7f9776ab9a011c2ab5f0ae7);
+            
+        
+
+        marker_74ade229032ce9bb3bdd8b4a4b326a2e.bindPopup(popup_0fb92a81621dcd38758965f9b9446ebf)
+        ;
+
+        
+    
+    
+            marker_74ade229032ce9bb3bdd8b4a4b326a2e.bindTooltip(
+                `<div>
+                     Site of Theft - Wien Hbf
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74ade229032ce9bb3bdd8b4a4b326a2e.setIcon(icon_8dda5406a1941b0d51f82c911a619642);
+            
+    
+            var marker_ee34c1f4bd4d2f5ad728fd7d2362290f = L.marker(
+                [48.2128, 16.3178],
+                {
+}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var icon_fb41bbb8fe374a80a9690aa2245ce3da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86383c8f11cfecc874290bbeb4cafe47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_729f54fcba14a3142ad37e6c2393170e = $(`<div id="html_729f54fcba14a3142ad37e6c2393170e" style="width: 100.0%; height: 100.0%;">June 28-29</div>`)[0];
+                popup_86383c8f11cfecc874290bbeb4cafe47.setContent(html_729f54fcba14a3142ad37e6c2393170e);
+            
+        
+
+        marker_ee34c1f4bd4d2f5ad728fd7d2362290f.bindPopup(popup_86383c8f11cfecc874290bbeb4cafe47)
+        ;
+
+        
+    
+    
+            marker_ee34c1f4bd4d2f5ad728fd7d2362290f.bindTooltip(
+                `<div>
+                     Suspected Residential Address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee34c1f4bd4d2f5ad728fd7d2362290f.setIcon(icon_fb41bbb8fe374a80a9690aa2245ce3da);
+            
+    
+            var circle_2e4f5d53971f27fe48b12610337a54a5 = L.circle(
+                [48.2128, 16.3178],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 2}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var poly_line_8d25b41adbf2ad8a25168fcb499ad020 = L.polyline(
+                [[48.1848, 16.3782], [48.2128, 16.3178]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+        var popup_32b5f7ef6fe9a0e0e152dd156995da14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da5251a612b78bd3c5fc94a146ae1759 = $(`<div id="html_da5251a612b78bd3c5fc94a146ae1759" style="width: 100.0%; height: 100.0%;">Afternoon of June 28</div>`)[0];
+                popup_32b5f7ef6fe9a0e0e152dd156995da14.setContent(html_da5251a612b78bd3c5fc94a146ae1759);
+            
+        
+
+        poly_line_8d25b41adbf2ad8a25168fcb499ad020.bindPopup(popup_32b5f7ef6fe9a0e0e152dd156995da14)
+        ;
+
+        
+    
+    
+            poly_line_8d25b41adbf2ad8a25168fcb499ad020.bindTooltip(
+                `<div>
+                     Wien Hbf -> Ottakring
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_a9e178a5102215d162c8f54e872268f1.addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+                marker_74ade229032ce9bb3bdd8b4a4b326a2e.setIcon(icon_8dda5406a1941b0d51f82c911a619642);
+            
+    
+                marker_ee34c1f4bd4d2f5ad728fd7d2362290f.setIcon(icon_fb41bbb8fe374a80a9690aa2245ce3da);
+            
+    
+            var marker_21c4f5aa2b6966fc9736ae4979db0f99 = L.marker(
+                [48.1986, 16.3612],
+                {
+}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var icon_715e24e3774a3b2d3db1768dd7c38763 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb58a1433383b44a1d414ff5c088c11c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_081c960d32a184ebc6ffcd9c5d8dfce7 = $(`<div id="html_081c960d32a184ebc6ffcd9c5d8dfce7" style="width: 100.0%; height: 100.0%;">Around midnight of June 30</div>`)[0];
+                popup_bb58a1433383b44a1d414ff5c088c11c.setContent(html_081c960d32a184ebc6ffcd9c5d8dfce7);
+            
+        
+
+        marker_21c4f5aa2b6966fc9736ae4979db0f99.bindPopup(popup_bb58a1433383b44a1d414ff5c088c11c)
+        ;
+
+        
+    
+    
+            marker_21c4f5aa2b6966fc9736ae4979db0f99.bindTooltip(
+                `<div>
+                     Airpods taken out of case for first time
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21c4f5aa2b6966fc9736ae4979db0f99.setIcon(icon_715e24e3774a3b2d3db1768dd7c38763);
+            
+    
+            var circle_db1df5dd1e4c70b6b55b47227a890786 = L.circle(
+                [48.1986, 16.3612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 2}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var poly_line_ea8dbc3ef9acfc8168af8fcbd96a5b2d = L.polyline(
+                [[48.2128, 16.3178], [48.1986, 16.3612]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+        var popup_0145c006b23ad191cbbe32d487a34208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa078cceaf68041d45978d14ad181982 = $(`<div id="html_fa078cceaf68041d45978d14ad181982" style="width: 100.0%; height: 100.0%;">Around midnight of June 30</div>`)[0];
+                popup_0145c006b23ad191cbbe32d487a34208.setContent(html_fa078cceaf68041d45978d14ad181982);
+            
+        
+
+        poly_line_ea8dbc3ef9acfc8168af8fcbd96a5b2d.bindPopup(popup_0145c006b23ad191cbbe32d487a34208)
+        ;
+
+        
+    
+    
+            poly_line_ea8dbc3ef9acfc8168af8fcbd96a5b2d.bindTooltip(
+                `<div>
+                     Ottakring -> Naschmarkt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_a9e178a5102215d162c8f54e872268f1.addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+                marker_74ade229032ce9bb3bdd8b4a4b326a2e.setIcon(icon_8dda5406a1941b0d51f82c911a619642);
+            
+    
+                marker_ee34c1f4bd4d2f5ad728fd7d2362290f.setIcon(icon_fb41bbb8fe374a80a9690aa2245ce3da);
+            
+    
+                marker_21c4f5aa2b6966fc9736ae4979db0f99.setIcon(icon_715e24e3774a3b2d3db1768dd7c38763);
+            
+    
+            var marker_89c875330295c211261e168df832d2b5 = L.marker(
+                [48.2493, 16.451],
+                {
+}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var icon_1d5d4f6926e2d60dcb1da3136f706236 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_246fd0ac0f6347e88a28e757a26b7910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_627ae4bb407eb7f50db180613b1cf6c7 = $(`<div id="html_627ae4bb407eb7f50db180613b1cf6c7" style="width: 100.0%; height: 100.0%;">July 2</div>`)[0];
+                popup_246fd0ac0f6347e88a28e757a26b7910.setContent(html_627ae4bb407eb7f50db180613b1cf6c7);
+            
+        
+
+        marker_89c875330295c211261e168df832d2b5.bindPopup(popup_246fd0ac0f6347e88a28e757a26b7910)
+        ;
+
+        
+    
+    
+            marker_89c875330295c211261e168df832d2b5.bindTooltip(
+                `<div>
+                     Suspected Residential Address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89c875330295c211261e168df832d2b5.setIcon(icon_1d5d4f6926e2d60dcb1da3136f706236);
+            
+    
+            var circle_1fc76611999628203a48ce2271b266b7 = L.circle(
+                [48.2493, 16.451],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 2}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var poly_line_0412fc2c491880197a6977f0384a74d2 = L.polyline(
+                [[48.1986, 16.3612], [48.2493, 16.451]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+        var popup_e16a5c87702c4e14d826a2ba6db22025 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b0e22164bb73feba5a77e60609bfcd0 = $(`<div id="html_0b0e22164bb73feba5a77e60609bfcd0" style="width: 100.0%; height: 100.0%;">Between June 30 and July 2</div>`)[0];
+                popup_e16a5c87702c4e14d826a2ba6db22025.setContent(html_0b0e22164bb73feba5a77e60609bfcd0);
+            
+        
+
+        poly_line_0412fc2c491880197a6977f0384a74d2.bindPopup(popup_e16a5c87702c4e14d826a2ba6db22025)
+        ;
+
+        
+    
+    
+            poly_line_0412fc2c491880197a6977f0384a74d2.bindTooltip(
+                `<div>
+                     Naschmark -> Donaustadt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fca16491f49b497eed9850aec24725a2 = L.marker(
+                [48.1745, 16.3341],
+                {
+}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+            var icon_1336cf7997b9c3c97836674a04868e2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2479ff71d1c8ef9c8338b8745e931d83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c9255d11088476f999d34aec3a318e8 = $(`<div id="html_3c9255d11088476f999d34aec3a318e8" style="width: 100.0%; height: 100.0%;">Morning of July 2</div>`)[0];
+                popup_2479ff71d1c8ef9c8338b8745e931d83.setContent(html_3c9255d11088476f999d34aec3a318e8);
+            
+        
+
+        marker_fca16491f49b497eed9850aec24725a2.bindPopup(popup_2479ff71d1c8ef9c8338b8745e931d83)
+        ;
+
+        
+    
+    
+            marker_fca16491f49b497eed9850aec24725a2.bindTooltip(
+                `<div>
+                     Wien Meidling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fca16491f49b497eed9850aec24725a2.setIcon(icon_1336cf7997b9c3c97836674a04868e2c);
+            
+    
+            var poly_line_40099777a64225ff6cc8337b24ad8f0a = L.polyline(
+                [[48.2493, 16.451], [48.1745, 16.3341]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+        var popup_064fba2a3aa5cee11e9108cf9b866f9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_666654ba9fd260f9c6509ed493b21587 = $(`<div id="html_666654ba9fd260f9c6509ed493b21587" style="width: 100.0%; height: 100.0%;">Morning of July 2</div>`)[0];
+                popup_064fba2a3aa5cee11e9108cf9b866f9e.setContent(html_666654ba9fd260f9c6509ed493b21587);
+            
+        
+
+        poly_line_40099777a64225ff6cc8337b24ad8f0a.bindPopup(popup_064fba2a3aa5cee11e9108cf9b866f9e)
+        ;
+
+        
+    
+    
+            poly_line_40099777a64225ff6cc8337b24ad8f0a.bindTooltip(
+                `<div>
+                     Donaustadt -> Wien Meidling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_a9e178a5102215d162c8f54e872268f1.addTo(map_e12080ef7f7096795c59a33bfc11da35);
+        
+    
+                marker_74ade229032ce9bb3bdd8b4a4b326a2e.setIcon(icon_8dda5406a1941b0d51f82c911a619642);
+            
+    
+                marker_ee34c1f4bd4d2f5ad728fd7d2362290f.setIcon(icon_fb41bbb8fe374a80a9690aa2245ce3da);
+            
+    
+                marker_21c4f5aa2b6966fc9736ae4979db0f99.setIcon(icon_715e24e3774a3b2d3db1768dd7c38763);
+            
+    
+                marker_89c875330295c211261e168df832d2b5.setIcon(icon_1d5d4f6926e2d60dcb1da3136f706236);
+            
+    
+                marker_fca16491f49b497eed9850aec24725a2.setIcon(icon_1336cf7997b9c3c97836674a04868e2c);
+            
+</script>
+</html>

@@ -14,7 +14,9 @@ All location data has been anonymized in accordance with GDPR Article 5 to preve
 
 Vienna (June 28 - July 2):
 
-![](images/Vienna_PoL.png)
+![](images/vienna.png)
+
+![](images/vienna_kyiv.png)
 
 ## 🔍 Display Interactive PoL Maps
 
@@ -27,7 +29,7 @@ python -m http.server
 Open in your web browser:
 
 ```
-http://localhost:8000/AirPods_PoL_EU.html
+http://localhost:8000/vienna.html
 ```
 
 ## ▶️ How to Run
