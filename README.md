@@ -5,8 +5,7 @@
 This repository documents a real-world case study in which Apple Find My network data was used to reconstruct the 
 movement and behavioral patterns of a stolen device. By systematically observing location ping 
 frequency, command response behavior, and status transitions within the Find My app, it was possible to build a 
-pattern-of-life (PoL) analysis that identified likely residential locations, inferred moments of human interaction with the 
-device, and traced movement between locations of interest. The repository provides a documented analytical framework and 
+pattern-of-life (PoL) analysis. The repository provides a documented analytical framework and 
 Python-based geospatial visualizations with privacy-preserving anonymization. 
 All location data has been anonymized in accordance with GDPR Article 5 to prevent identification of any individual.
 
