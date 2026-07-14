@@ -1,1 +1,10 @@
+click==8.4.2
+contextily==1.7.0
+findmy==0.10.1
+geopandas==1.1.4
+matplotlib==3.11.0
+numpy==2.5.1
+pandas==3.0.3
+pyicloud==2.6.5
+schedule==1.2.2
 folium==0.20.0

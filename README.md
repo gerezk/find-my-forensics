@@ -9,7 +9,7 @@ pattern-of-life (PoL) analysis. The repository provides a documented analytical 
 Python-based geospatial visualizations with privacy-preserving anonymization. 
 All location data has been anonymized in accordance with GDPR Article 5 to prevent identification of any individual.
 
-## 🗺️ Static PoL Maps
+## 🗺️ Maps
 
 Vienna (June 28 - July 2):
 
@@ -18,6 +18,10 @@ Vienna (June 28 - July 2):
 Train Trip from Vienna to Kyiv (July 2-3)
 
 ![](images/vienna_kyiv.png)
+
+Heatmap of location reports in Kyiv (July 3-12)
+
+![](maps/heatmap.gif)
 
 ## 🔍 Display Interactive PoL Maps
 
@@ -69,7 +73,12 @@ pip install -r requirements.txt
 
 ## 🛠️ Tech Stack
 - Python (3.12)
-- Folium (geospatial visualization)
+- Folium (interactive geospatial visualizations)
+- NumPy
+- Pandas
+- GeoPandas
+- Contextily (creating heatmaps)
+- Matplotlib
 - Jupyter Notebook
 
 ## ⚠️ Legal Disclaimer
