@@ -207,7 +207,7 @@ def animate(gdf: gpd.GeoDataFrame, output_path: Path, cell_size: int, decay=Fals
         return image, time_text, highlight_box
 
     anim = FuncAnimation(fig, update, frames=len(gdf_local), interval=INTERVAL, blit=False)
-    anim.save(output_path, writer=PillowWriter(fps=FPS))
+    anim.save(output_path, fps=FPS, writer="ffmpeg")
     plt.close(fig)
 
 
