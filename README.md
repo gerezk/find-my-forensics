@@ -95,7 +95,7 @@ The methods, code, and analysis presented in this repository are designed exclus
 **GDPR & Privacy Law**
 
 This project was developed in Austria and is subject to the General Data Protection Regulation (EU) 2016/679 (GDPR). Users of this methodology outside Austria remain subject to the GDPR if they are located in the European Economic Area, or to equivalent privacy legislation in their jurisdiction.
-Under GDPR Article 6, any processing of personal location data requires a lawful basis. Tracking the location of another individual without their consent, a legitimate legal interest, or law enforcement authorization is unlawful and may constitute a criminal offense under applicable national law.
+Under GDPR Article 6, any processing of personal location data requires a lawful basis. Users are responsible for ensuring their use of this methodology complies with all applicable privacy, data protection, and criminal laws in their jurisdiction.
 The location data presented in this repository has been anonymized and generalized to prevent identification of any individual. Specific addresses, movement patterns, and behavioral inferences have been obscured or aggregated in accordance with GDPR principles of data minimization (Article 5(1)(c)) and purpose limitation (Article 5(1)(b)).
 No Warranty & Limitation of Liability
 This project is provided "as is", without warranty of any kind, express or implied. The author:
